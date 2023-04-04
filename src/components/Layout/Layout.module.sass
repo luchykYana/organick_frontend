@@ -1,0 +1,7 @@
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.page-header
+  @include width-height-radius(100%, $header-height, 0)
+  @include position(sticky, 0, 0, 50)
+  background-color: $white

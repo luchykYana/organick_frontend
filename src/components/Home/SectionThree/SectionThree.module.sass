@@ -1,0 +1,45 @@
+@import "src/style/mixin"
+@import "src/style/images"
+@import "src/style/vars"
+
+.section-three
+  @include flex(row, left, center)
+
+  &--bg
+    background-color: $light-gray
+  &__image
+    width: 50%
+    height: calc(100vh - $header-height)
+    background: url($section-three__image) center no-repeat, $light-gray
+    background-size: contain
+    background-blend-mode: multiply
+
+  &__content
+    @include flex(column, normal, start)
+    grid-row-gap: 20px
+    width: 43%
+
+    p:first-child
+      color: $green
+
+.list
+  margin: 20px 0 10px
+
+  &__item
+    @include flex(row, normal, center)
+    margin-bottom: 30px
+
+    &__image
+      @include border(1px solid $white, 100px, 100px, 1.5em)
+      margin-right: 30px
+
+    &__text
+      width: 70%
+      h6
+        margin-bottom: 5px
+
+  .image
+    &--one
+      background: url($section-three__icon--one) center no-repeat, $white
+    &--two
+      background: url($section-three__icon--two) center no-repeat, $white

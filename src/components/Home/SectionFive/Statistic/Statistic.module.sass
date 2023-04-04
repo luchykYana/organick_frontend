@@ -1,0 +1,11 @@
+@import "src/style/vars"
+@import "src/style/mixin"
+
+.statistic
+  @include flex(column, center, center)
+  @include border(7px solid $white, 210px, 210px, 50%)
+  background-color: $light-gray
+  outline: 5px solid $green
+
+  h2
+    margin-bottom: 5px

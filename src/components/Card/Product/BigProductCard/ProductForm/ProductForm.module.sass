@@ -1,0 +1,14 @@
+@import "src/style/typography"
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.product-form
+  @include flex(row, left, center)
+  margin-top: 35px
+
+  input
+    @include border(2px solid $blue, 130px, 80px, .8em)
+    @extend .nav
+    text-align: center
+    color: $blue
+    margin: 0 25px

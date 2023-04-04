@@ -1,0 +1,19 @@
+@import "src/style/images"
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.gallery-card
+  @include flex(row, center, center)
+
+  &__text
+    @include border(1px solid transparent, 320px, 100px, 1.4em)
+    @include flex(row, center, center)
+    background-color: $white
+    color: $blue
+
+  &--one
+    @include photo($gallery-card--one, 610px, 580px, 0)
+  &--two
+    @include photo($gallery-card--two, 610px, 580px, 0)
+  &--three
+    @include photo($gallery-card--three, 610px, 580px, 0)

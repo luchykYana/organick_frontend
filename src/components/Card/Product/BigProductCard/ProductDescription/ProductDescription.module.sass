@@ -1,0 +1,15 @@
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.product-description
+  margin: 50px 0 0
+
+  &__buttons
+    @include flex(row, center, center)
+    grid-column-gap: 50px
+    margin-bottom: 30px
+
+  &__text
+    margin: 0 auto
+    width: 70%
+    text-align: center

@@ -1,0 +1,14 @@
+@import "src/style/typography"
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.main-nav
+  @include flex(row, space-evenly, center)
+
+  a
+    @extend .nav
+    transition: 200ms color
+
+  a:hover
+    color: $green
+

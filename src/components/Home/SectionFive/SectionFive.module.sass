@@ -1,0 +1,21 @@
+@import "src/style/images"
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.section-five
+  @include flex(column, center, center)
+  height: 150vh
+  background: url($section-five__image) center no-repeat
+  background-size: cover
+  text-align: center
+
+  &__header
+    margin-bottom: 70px
+    p
+      color: $green
+      margin-bottom: 25px
+
+  &__statistics
+    @include flex(row, center, center)
+    grid-column-gap: 3vw
+    margin-top: 200px

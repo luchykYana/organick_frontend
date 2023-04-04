@@ -1,0 +1,10 @@
+@import "src/style/mixin"
+@import "src/style/images"
+
+.cart-banner
+  @include flex(row, center, center)
+  height: 450px
+  background: url($cart-banner__image) no-repeat, url($cart-banner__pattern) no-repeat
+  background-size: cover
+  background-blend-mode: multiply
+  margin-bottom: 100px

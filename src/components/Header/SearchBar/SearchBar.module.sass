@@ -1,0 +1,24 @@
+@import "src/style/typography"
+@import "src/style/mixin"
+@import "src/style/vars"
+@import "src/style/images"
+
+.search-bar
+  @include position(relative, 0, 0, 5)
+  justify-self: right
+
+  &__input
+    @include border(1px solid transparent, 18vw, 50px, 2em)
+    @extend .nav
+    background-color: $light-gray
+    padding: 0 10px
+
+  &__input:focus
+    outline-color: $blue
+
+  &__btn
+    .btn__icon
+      @include position(absolute, 5px, 5px, 10)
+      @include photo($glass, 40px, 40px, 2em)
+      background-color: $green
+      background-size: 40%

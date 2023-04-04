@@ -1,0 +1,19 @@
+@import "src/style/images"
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.not-found
+  width: 100vw
+  height: calc(100vh - $header-height)
+  background: url($not-found__image) center/100% no-repeat, url($not-found__pattern) 38% 50%/100% no-repeat
+  background-size: cover
+  background-blend-mode: multiply
+
+  &__content
+    justify-self: right
+    align-self: center
+    width: 40%
+
+    p
+      margin: 15px 0 30px
+

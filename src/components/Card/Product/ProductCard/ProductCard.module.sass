@@ -1,0 +1,18 @@
+@import "../../../../style/mixin"
+@import "../../../../style/typography"
+@import "../../../../style/vars"
+
+.product-card
+  @include border(1px solid transparent, 335px, 483px, 2em)
+  @include flex(column, space-between, start)
+  background-size: contain
+  background-blend-mode: multiply
+  padding: 25px 25px 20px
+  cursor: pointer
+
+  &__info
+    color: $blue
+    width: 100%
+
+    &__values
+      @include flex(row, space-between, center)

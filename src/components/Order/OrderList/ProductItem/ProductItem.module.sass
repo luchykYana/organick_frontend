@@ -1,0 +1,15 @@
+@import "src/style/typography"
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.product-item
+  @include grid(1fr, 2fr 3fr 2fr 5fr 1fr)
+  align-items: center
+
+  &__image
+    @include border(3px solid transparent, 290px, 230px, 1em)
+    background-size: contain
+    background-blend-mode: multiply
+
+  &__text
+    @extend .heading-h6

@@ -1,0 +1,21 @@
+@import "src/style/vars"
+@import "src/style/mixin"
+
+.footer
+  @include flex(column, center, center)
+
+  &__content
+    @include flex(row, space-between, normal)
+    margin: 50px 0 100px
+    width: 100%
+
+  &__delimiter
+    &--horizontal
+      width: 100vw
+      height: 1px
+      background: $gray
+
+    &--vertical
+      width: 1px
+      height: 350px
+      background: $gray

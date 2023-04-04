@@ -1,0 +1,28 @@
+@import "src/style/images"
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.ad-card
+  @include flex(column, center, normal)
+  padding: 0 50px
+
+  p
+    margin-bottom: 15px
+  h3
+    width: 45%
+
+  &--one
+    @include photo($ad-card--one, 680px, 370px, 2em)
+
+    p
+      color: $light-gray
+    h3
+      color: $light-gray
+
+  &--two
+    @include photo($ad-card--two, 680px, 370px, 2em)
+
+    p
+      color: $green
+    h3
+      color: $blue

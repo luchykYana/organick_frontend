@@ -1,0 +1,17 @@
+@import "../../../../style/mixin"
+@import "../../../../style/typography"
+@import "../../../../style/vars"
+
+.close-button
+  @include border(1px solid $blue, 80px, 45px, 1em)
+  @include flex(row, center, center)
+  @extend .nav
+  background-color: $blue
+  color: $white
+  cursor: pointer
+  transition: 300ms color, 300ms background-color
+  margin: 30px
+
+.close-button:hover
+  background-color: $light-gray
+  color: $blue

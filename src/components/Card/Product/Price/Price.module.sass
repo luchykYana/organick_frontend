@@ -1,0 +1,11 @@
+@import "../../../../style/typography"
+@import "../../../../style/mixin"
+@import "../../../../style/vars"
+
+.price
+  @include flex(row, start, center)
+  grid-column-gap: 10px
+
+  .text
+    text-decoration: line-through
+    color: $number-green

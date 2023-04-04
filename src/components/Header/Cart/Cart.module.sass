@@ -1,0 +1,24 @@
+@import "src/style/typography"
+@import "src/style/mixin"
+@import "src/style/vars"
+@import "src/style/images"
+
+.cart
+  @include flex(row, left, center)
+  @include border(1px solid transparent, 140px, 50px, 2em)
+  background-color: $light-gray
+  padding: 0 5px
+  justify-self: right
+  cursor: pointer
+
+  &__image
+    @include photo($cart, 40px, 40px, 2em)
+    background-color: $blue
+    background-size: 45%
+    margin-right: 10px
+
+  &__text
+    @extend .nav
+
+.red
+  color: $orange

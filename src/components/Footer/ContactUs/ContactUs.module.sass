@@ -1,0 +1,19 @@
+@import "src/style/typography"
+@import "src/style/mixin"
+
+.contact-us
+  text-align: right
+  width: 20%
+
+  &__links
+    @include flex(column, normal, normal)
+    grid-row-gap: 30px
+    margin-top: 50px
+
+    p
+      margin-bottom: 5px
+
+    a
+      transition: color 300ms
+    a:hover
+      color: $green

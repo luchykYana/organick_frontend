@@ -1,0 +1,24 @@
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.section-four
+  @include flex(column, center, center)
+  width: 100%
+  padding: 200px 0 50px
+  position: relative
+
+  &__products
+    @include flex(column, space-evenly, center)
+    &__cards
+      @include flex(row, space-evenly, center)
+      flex-wrap: wrap
+      grid-row-gap: 50px
+
+  &__btn
+    margin: 100px 0
+
+  &__big-card
+    @include position(absolute, 40%, 0, 0)
+
+.overlay
+  opacity: 50%

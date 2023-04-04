@@ -1,0 +1,15 @@
+@import "src/style/mixin"
+@import "src/style/vars"
+
+.section-six
+  background-color: $blue
+  padding: 100px 0 200px
+
+  p
+    color: $green
+  header
+    color: $white
+    margin: 20px 0 40px
+
+  &__products
+    @include flex(row, space-between, center)

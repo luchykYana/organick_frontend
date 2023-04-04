@@ -1,0 +1,21 @@
+@import "../../../style/mixin"
+@import "../../../style/images"
+@import "../../../style/vars"
+
+.section-one
+  width: 100vw
+  height: calc(100vh - $header-height)
+  background: url($section-one__image) center/100% no-repeat, url($section-one__pattern) 0/100% no-repeat
+  background-size: cover
+  background-blend-mode: multiply
+
+  &__content
+    width: 30vw
+    align-self: center
+    margin-left: 5vw
+
+    p
+      color: $green
+
+    header
+      margin: 20px 0 40px

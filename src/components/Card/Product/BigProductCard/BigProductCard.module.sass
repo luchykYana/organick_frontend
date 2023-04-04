@@ -1,0 +1,25 @@
+@import "../../../../style/mixin"
+@import "../../../../style/typography"
+@import "../../../../style/vars"
+
+.big-product-card
+  padding: 30px 0
+  background-color: $white
+
+  &__content
+    @include flex(row, space-between, start)
+
+  &__info
+    @include flex(row, center, center)
+    grid-column-gap: 100px
+
+    &__image
+      @include border(1px solid transparent, 600px, 560px, 2em)
+      background-size: contain
+      background-blend-mode: multiply
+      padding: 25px 25px 20px
+
+    &__text
+      @include flex(column, left, normal)
+      grid-row-gap: 20px
+      width: 45%
