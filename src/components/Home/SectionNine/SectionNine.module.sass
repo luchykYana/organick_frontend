@@ -1,0 +1,22 @@
+@import "../../../style/mixin"
+@import "../../../style/vars"
+
+.section-nine
+  border: 1px solid transparent
+  padding: 20px 20px 180px
+  width: 80%
+  margin: 0 auto
+
+  &__header
+    @include flex(row, space-between, end)
+    margin-bottom: 45px
+
+    &__text
+      width: 50%
+
+      p
+        color: $green
+        margin-bottom: 10px
+
+  &__content
+    @include flex(row, space-between, center)

@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
 
 import {Button} from '../../../../Button/Button';
+
 import css from './ProductDescription.module.sass';
 
 const ProductDescription = ({productDescription, additionalInfo}) => {

@@ -1,0 +1,34 @@
+@import "../../../style/typography"
+@import "../../../style/mixin"
+@import "../../../style/images"
+@import "../../../style/vars"
+
+.news-card
+  @include border(1px solid transparent, 680px, 530px, 2em)
+  position: relative
+  padding: 50px 35px
+
+  &__date
+    @include border(1px solid transparent, 82px, 82px, 50%)
+    @include flex(column, center, center)
+    @extend .heading-h6
+    background-color: $white
+
+  &__info
+    @include border(1px solid $light-gray, 610px, 300px, 2em)
+    @include flex(column, space-between, normal)
+    @include position(absolute, 270px, auto, 2)
+    @include shadow(0 30px 10px, $light-gray)
+    padding: 40px 50px
+    background-color: $white
+
+    &__author
+      @extend .paragraph
+      background: url($news-card__author-pattern) no-repeat
+      line-height: 1.1
+      color: $blue
+      padding-left: 25px
+      margin-bottom: 20px
+
+    p
+      margin-top: 5px

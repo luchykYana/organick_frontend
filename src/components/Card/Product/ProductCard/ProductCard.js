@@ -3,10 +3,11 @@ import {useEffect, useRef, useState} from 'react';
 
 import {productActions} from '../../../../store';
 import {URL} from '../../../../configs';
-import {Price} from '../Price/Price';
-import {Stars} from '../../../Stars/Stars';
-import css from './ProductCard.module.sass';
 import {Category} from '../Category/Category';
+import {Stars} from '../../../Stars/Stars';
+import {Price} from '../Price/Price';
+
+import css from './ProductCard.module.sass';
 
 const {productForMore} = productActions;
 

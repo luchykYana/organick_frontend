@@ -3,5 +3,7 @@ export const URL = {
     images: '/images',
     products: '/products',
     categories: '/categories',
-    orders: '/orders'
+    orders: '/orders',
+    customers: '/customers',
+    customersSubscribe: '/customers/subscribe'
 }

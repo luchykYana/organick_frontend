@@ -1,5 +1,6 @@
-import css from './Review.module.sass';
 import {Stars} from '../../../Stars/Stars';
+
+import css from './Review.module.sass';
 
 const Review = ({review}) => {
     const {image, text, name, position} = review;

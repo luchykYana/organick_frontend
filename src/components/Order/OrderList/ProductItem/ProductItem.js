@@ -5,6 +5,7 @@ import {ProductFormUpdate} from '../ProductFormUpdate/ProductFormUpdate';
 import {CloseButton, Price} from '../../../Card/Product';
 import {orderActions} from '../../../../store';
 import {URL} from '../../../../configs';
+
 import css from './ProductItem.module.sass';
 
 const {deleteProductFromCart} = orderActions;
@@ -25,7 +26,7 @@ const ProductItem = ({item}) => {
         }
     }, [item.product_id, products]);
 
-    const click = () => dispatch(deleteProductFromCart({id:product?.id}));
+    const click = () => dispatch(deleteProductFromCart({id: product?.id}));
 
     return (
         <div className={css['product-item']}>

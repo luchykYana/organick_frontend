@@ -54,3 +54,15 @@ export const CustomerValidator = Joi.object({
             'string.max': 'The maximum number of characters is 500'
         })
 });
+
+export const emailValidator = Joi.object({
+    email: Joi
+        .string()
+        .pattern(/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/)
+        .trim()
+        .required()
+        .messages({
+            'string.empty': 'The field is required',
+            'string.pattern.base': 'example@yourmail.com'
+        }),
+})

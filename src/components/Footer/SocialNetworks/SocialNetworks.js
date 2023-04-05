@@ -1,5 +1,5 @@
-import {Logo} from '../../Logo/Logo';
 import {MediaIcon} from './MediaIcon/MediaIcon';
+import {Logo} from '../../Logo/Logo';
 
 import css from './SocialNetwork.module.sass';
 

@@ -5,9 +5,10 @@ import {
     SectionEight,
     SectionFive,
     SectionFour,
+    SectionNine,
     SectionOne,
     SectionSeven,
-    SectionSix,
+    SectionSix, SectionTen,
     SectionThree,
     SectionTwo
 } from '../../components';
@@ -32,6 +33,8 @@ const HomePage = () => {
             <SectionSix/>
             <SectionSeven/>
             <SectionEight/>
+            <SectionNine/>
+            <SectionTen/>
         </div>
     );
 };

@@ -6,3 +6,5 @@ export * from './SectionFive/SectionFive';
 export * from './SectionSix/SectionSix';
 export * from './SectionSeven/SectionSeven';
 export * from './SectionEight/SectionEight';
+export * from './SectionNine/SectionNine';
+export * from './SectionTen/SectionTen';

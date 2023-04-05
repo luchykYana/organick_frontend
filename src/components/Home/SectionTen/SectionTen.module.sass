@@ -1,0 +1,43 @@
+@import "../../../style/typography"
+@import "../../../style/mixin"
+@import "../../../style/images"
+@import "../../../style/vars"
+
+.section-ten
+  @include border(1px solid transparent, 73vw, 320px, 2em)
+  @include flex(row, space-between, center)
+  padding: 0 3.6vw
+  background: url($section-ten__subscribe-form) no-repeat
+  margin: 0 auto
+
+  &__header
+    @extend .heading-h2
+    color: $white
+    width: 360px
+
+  &__form
+    @include flex(row, center, center)
+    grid-column-gap: 5px
+
+    input
+      @include border(1px solid transparent, 300px, 80px, 1em)
+      @extend .paragraph
+      padding: 0 25px
+
+    input::placeholder
+      font-style: italic
+
+    input:focus
+      outline-color: $green
+    input:focus:invalid
+      outline-color: $orange
+
+    &__error
+      @extend .heading-h6
+      color: $yellow
+      margin: 10px 30px
+
+.subscribe
+  @extend .heading-h3
+  color: $white
+  margin-top: 20px

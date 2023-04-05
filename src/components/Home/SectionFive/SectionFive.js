@@ -1,6 +1,7 @@
 import {Statistic} from './Statistic/Statistic';
 import {Review} from './Review/Review';
-import {review1} from '../../../configs';
+import {review} from '../../../configs';
+
 import css from './SectionFive.module.sass';
 
 const SectionFive = () => {
@@ -12,7 +13,7 @@ const SectionFive = () => {
             </header>
 
             <div className={css['section-five__reviews']}>
-                <Review review={review1}/>
+                <Review review={review}/>
             </div>
 
             <div className={css['section-five__statistics']}>

@@ -1,9 +1,9 @@
-import css from './Footer.module.sass';
-
-import {ContactUs} from './ContactUs/ContactUs';
-import {Copyright} from './Copyright/Copyright';
 import {SocialNetworks} from './SocialNetworks/SocialNetworks';
 import {UtilityPages} from './UtilityPages/UtilityPages';
+import {ContactUs} from './ContactUs/ContactUs';
+import {Copyright} from './Copyright/Copyright';
+
+import css from './Footer.module.sass';
 
 const Footer = () => {
     return (

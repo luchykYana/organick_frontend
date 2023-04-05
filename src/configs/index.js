@@ -1,2 +1,2 @@
-export * from './review';
+export * from './data';
 export * from './urls';

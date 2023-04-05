@@ -60,7 +60,7 @@ const orderSlice = createSlice({
             state.price = action.payload.price;
             state.discount = action.payload.discount;
         },
-        cleanCart: (state, action) => {
+        cleanCart: (state) => {
             state.cart = [];
             state.price = 0;
             state.discount = 0;

@@ -29,7 +29,7 @@ const productSlice = createSlice({
         productForMore: (state, action) => {
             state.productId = action.payload.product;
         },
-        cleanProductForMore: (state, action) => {
+        cleanProductForMore: (state) => {
             state.productId = null;
         }
     },

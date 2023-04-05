@@ -2,8 +2,8 @@ import css from './Header.module.sass';
 
 import {Navigation} from './Navigation/Navigation';
 import {SearchBar} from './SearchBar/SearchBar';
-import {Cart} from './Cart/Cart';
 import {Logo} from '../Logo/Logo';
+import {Cart} from './Cart/Cart';
 
 const Header = () => {
     return (
