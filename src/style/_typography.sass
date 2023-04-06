@@ -47,3 +47,25 @@
 
 .heading-h1, .heading-h2, .heading-h3, .heading-h4, .heading-h5, .heading-h6, .nav, .card-heading, .card-discount
   color: $blue
+
+@media only screen and (max-width: 992px)
+  .heading-h1
+    @include fontStyle(700, 4.0em, 1, $first-font, $safe-sans-serif, $font-sans-serif)
+
+  .heading-h2
+    @include fontStyle(700, 2.7em, 1, $first-font, $safe-sans-serif, $font-sans-serif)
+
+  .heading-h3
+    @include fontStyle(700, 2.1em, 1, $first-font, $safe-sans-serif, $font-sans-serif)
+
+  .heading-h4
+    @include fontStyle(700, 1.8em, 1, $first-font, $safe-sans-serif, $font-sans-serif)
+
+  .heading-h5
+    @include fontStyle(700, 1.5em, 1, $first-font, $safe-sans-serif, $font-sans-serif)
+
+  .heading-h6
+    @include fontStyle(700, 1.2em, 1, $first-font, $safe-sans-serif, $font-sans-serif)
+
+  .nav
+    @include fontStyle(700, 1em, 1, $first-font, $safe-sans-serif, $font-sans-serif)

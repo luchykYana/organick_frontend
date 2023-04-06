@@ -9,5 +9,10 @@
 
   &__icons
     @include flex(row, center, center)
-    grid-column-gap: 10px
+    flex-wrap: wrap
+    grid-gap: 10px
     margin-top: 20px
+
+@media only screen and (max-width: 992px)
+  .social-networks
+    width: 90%

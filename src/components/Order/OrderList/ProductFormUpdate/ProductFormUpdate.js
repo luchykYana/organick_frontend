@@ -19,7 +19,7 @@ const ProductFormUpdate = ({id, value}) => {
 
     return (
         <form className={`${css['product-form']}`}>
-            <label className={`card-heading`}>Quantity :
+            <label className={`card-heading`}><span>Quantity :</span>
                 <input type="number" min={1} max={100} defaultValue={value} name={'amount'} onChange={addProducts}/>
             </label>
         </form>

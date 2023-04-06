@@ -17,3 +17,13 @@
     @include photo($gallery-card--two, 610px, 580px, 0)
   &--three
     @include photo($gallery-card--three, 610px, 580px, 0)
+
+@media only screen and (max-width: 1200px)
+  .gallery-card
+    &--three
+      display: none
+
+@media only screen and (max-width: 768px)
+  .gallery-card
+    &--two
+      display: none

@@ -19,3 +19,16 @@
 
     header
       margin: 20px 0 40px
+
+@media only screen and (max-width: 992px)
+  .section-one
+    background: url($section-one__image) left/100% no-repeat
+    background-size: cover
+
+    &__content
+      width: 70%
+
+@media only screen and (max-width: 768px)
+  .section-one
+    &__content
+      width: 90%

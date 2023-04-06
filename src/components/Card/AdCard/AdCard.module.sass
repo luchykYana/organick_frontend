@@ -26,3 +26,11 @@
       color: $green
     h3
       color: $blue
+
+@media only screen and (max-width: 992px)
+  .ad-card
+    &--two
+      display: none
+
+    &--one
+      @include photo($ad-card--one, 70vw, 370px, 2em)

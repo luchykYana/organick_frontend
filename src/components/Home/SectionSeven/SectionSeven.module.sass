@@ -23,3 +23,12 @@
       margin-top: 30px
       > p
         margin-top: 5px
+
+@media only screen and (max-width: 1200px)
+  .section-seven
+    &__image
+      display: none
+
+    &__content
+      @include border(1px solid transparent, 100vw, fit-content, 2em)
+      @include position(relative, 0, 0, 10)

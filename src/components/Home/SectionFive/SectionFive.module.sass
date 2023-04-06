@@ -17,5 +17,13 @@
 
   &__statistics
     @include flex(row, center, center)
-    grid-column-gap: 3vw
+    flex-wrap: wrap
+    grid-gap: 3vw
     margin-top: 200px
+
+@media only screen and (max-width: 768px)
+  .section-five
+    &__header
+      margin-bottom: 0
+    &__statistics
+      margin-top: 50px

@@ -4,9 +4,9 @@
 @import "../../../style/vars"
 
 .news-card
-  @include border(1px solid transparent, 680px, 530px, 2em)
+  @include border(1px solid transparent, 35vw, 26vw, 2em)
   position: relative
-  padding: 50px 35px
+  padding: 50px 2vw
 
   &__date
     @include border(1px solid transparent, 82px, 82px, 50%)
@@ -15,7 +15,7 @@
     background-color: $white
 
   &__info
-    @include border(1px solid $light-gray, 610px, 300px, 2em)
+    @include border(1px solid $light-gray, 32vw, 16vw, 2em)
     @include flex(column, space-between, normal)
     @include position(absolute, 270px, auto, 2)
     @include shadow(0 30px 10px, $light-gray)
@@ -32,3 +32,18 @@
 
     p
       margin-top: 5px
+
+@media only screen and (max-width: 1600px)
+  .news-card
+    @include border(1px solid transparent, 680px, 600px, 2em)
+
+    &__info
+      @include border(1px solid $light-gray, 600px, 330px, 2em)
+
+  .news-card:nth-of-type(2)
+    display: none
+
+@media only screen and (max-width: 992px)
+  .news-card:nth-of-type(1)
+    display: none
+

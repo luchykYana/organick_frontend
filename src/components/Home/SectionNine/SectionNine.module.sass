@@ -20,3 +20,14 @@
 
   &__content
     @include flex(row, space-between, center)
+    grid-column-gap: 5px
+
+@media only screen and (max-width: 1600px)
+  .section-nine
+    &__content
+      @include flex(row, center, center)
+
+@media only screen and (max-width: 992px)
+  .section-nine
+    &__header
+      display: none

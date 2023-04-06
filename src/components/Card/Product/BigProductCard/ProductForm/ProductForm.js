@@ -20,7 +20,7 @@ const ProductForm = ({id, value}) => {
 
     return (
         <form className={`${css['product-form']}`} onSubmit={addProducts}>
-            <label className={`card-heading`}>Quantity :
+            <label className={`card-heading`}><span>Quantity :</span>
                 <input type="number" min={1} max={100} defaultValue={value} name={'amount'}/>
             </label>
             <Button text={'Add To Cart'} btnClass={'info--blue'} arrow={true}/>

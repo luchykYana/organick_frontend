@@ -14,7 +14,7 @@
     grid-column-gap: 100px
 
     &__image
-      @include border(1px solid transparent, 600px, 560px, 2em)
+      @include border(1px solid transparent, 31vw, 29vw, 2em)
       background-size: contain
       background-blend-mode: multiply
       padding: 25px 25px 20px
@@ -23,3 +23,11 @@
       @include flex(column, left, normal)
       grid-row-gap: 20px
       width: 45%
+
+@media only screen and (max-width: 992px)
+  .big-product-card
+    &__info
+      &__image
+        display: none
+      &__text
+        width: 90%

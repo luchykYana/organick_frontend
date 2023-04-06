@@ -8,7 +8,7 @@
   @include flex(row, space-between, center)
   padding: 0 3.6vw
   background: url($section-ten__subscribe-form) no-repeat
-  margin: 0 auto
+  margin: 0 auto 200px
 
   &__header
     @extend .heading-h2
@@ -41,3 +41,17 @@
   @extend .heading-h3
   color: $white
   margin-top: 20px
+
+@media only screen and (max-width: 1200px)
+  .section-ten
+    @include flex(column, center, center)
+    grid-row-gap: 30px
+
+    &__header
+      width: 90%
+
+@media only screen and (max-width: 992px)
+  .section-ten
+    &__form
+      @include flex(column, center, start)
+      grid-row-gap: 10px
