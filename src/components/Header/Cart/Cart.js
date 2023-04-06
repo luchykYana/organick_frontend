@@ -11,7 +11,6 @@ const Cart = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        console.log(cart)
         if (cart.length > 0) {
             const sumOfProducts = cart.reduce((acc, val) => acc + val.amount, 0);
             setNumber(sumOfProducts);
