@@ -31,7 +31,7 @@ const orderSlice = createSlice({
             if (state.cart.length < 1) {
                 state.cart.push(action.payload)
             } else {
-                const index = state.cart.findIndex(e => e.id === action.payload.product_id);
+                const index = state.cart.findIndex(e => e.product_id === action.payload.product_id);
 
                 if (index >= 0) {
                     state.cart[index].amount += action.payload.amount;
@@ -41,7 +41,7 @@ const orderSlice = createSlice({
             }
         },
         changeProductInCart: (state, action) => {
-            const index = state.cart.findIndex(e => e.id === action.payload.product_id);
+            const index = state.cart.findIndex(e => e.product_id === action.payload.product_id);
 
             if (index >= 0) {
                 state.cart[index].amount = action.payload.amount;
@@ -50,7 +50,7 @@ const orderSlice = createSlice({
             }
         },
         deleteProductFromCart: (state, action) => {
-            const index = state.cart.findIndex(e => e.id === action.payload.product_id);
+            const index = state.cart.findIndex(e => e.product_id === action.payload.product_id);
 
             if (index >= 0) {
                 state.cart.splice(index, 1);

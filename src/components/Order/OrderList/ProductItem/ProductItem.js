@@ -26,7 +26,7 @@ const ProductItem = ({item}) => {
         }
     }, [item.product_id, products]);
 
-    const click = () => dispatch(deleteProductFromCart({id: product?.id}));
+    const click = () => dispatch(deleteProductFromCart({product_id: product?.id}));
 
     return (
         <div className={css['product-item']}>
@@ -35,7 +35,7 @@ const ProductItem = ({item}) => {
             <div className={css['product-item__text']}>
                 <Price price={product?.price} discount={product?.discount}/>
             </div>
-            <ProductFormUpdate id={item.id} value={item.amount}/>
+            <ProductFormUpdate id={item.product_id} value={item.amount}/>
             <CloseButton click={click}/>
         </div>
     );
